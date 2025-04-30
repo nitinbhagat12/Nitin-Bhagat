@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitin Bhagat | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Orbitron font for techy look -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Nitin Bhagat</div>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="Nitin_Bhagat_CV.pdf" download>Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <img src="nitin.jpg" alt="Nitin Bhagat" class="profile-pic">
+            <div class="hero-text">
+                <h2>Hi, I'm <span class="highlight">Nitin Bhagat</span></h2>
+                <h3><span id="typed"></span></h3>
+                <p class="hero-description">
+                    Computer Science student passionate about Core-software Development, DevOps, and Cyber Technologies.<br>
+                    Strong problem solver, quick learner, and a team player.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-bubbles">
+            <div class="skill-group">
+                <h3>Languages</h3>
+                <div class="bubble">Java</div>
+                <div class="bubble">C++</div>
+                <div class="bubble">SQL</div>
+                <div class="bubble">Python</div>
+            </div>
+            <div class="skill-group">
+                <h3>Frameworks</h3>
+                <div class="bubble">Spring</div>
+                <div class="bubble">Django</div>
+                <div class="bubble">React</div>
+            </div>
+            <div class="skill-group">
+                <h3>Tools & Platforms</h3>
+                <div class="bubble">Git</div>
+                <div class="bubble">Docker</div>
+                <div class="bubble">AWS</div>
+                <div class="bubble">Jenkins</div>
+                <div class="bubble">Kubernetes</div>
+            </div>
+            <div class="skill-group">
+                <h3>Soft Skills</h3>
+                <div class="bubble">Public Speaking</div>
+                <div class="bubble">Leadership</div>
+                <div class="bubble">Team Management</div>
+                <div class="bubble">Problem Solving</div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3 class="project-title">ATM Simulation System</h3>
+                <p>Developed an object-oriented ATM simulation system in Java with user authentication, transaction logging, and exception handling.</p>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">CI/CD Pipeline Automation</h3>
+                <p>Built an automated CI/CD pipeline using Jenkins and Docker to streamline code integration, testing, and containerized deployment.</p>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">Cyber Recon & Exploitation</h3>
+                <p>Performed penetration testing using Kali Linux tools like Nmap for network scanning and Metasploit for vulnerability exploitation in a simulated lab environment.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="certificates">
+        <h2 class="section-title">Certificates</h2>
+        <div class="certificates-grid">
+            <div class="cert-card">Core Java - Techvanto Academy</div>
+            <div class="cert-card">Cloud Computing - NPTEL</div>
+            <div class="cert-card">Ethical Hacking Essentials - Coursera</div>
+            <div class="cert-card">Digital Forensic Essentials - Coursera</div>
+            <div class="cert-card">DevOps and Software Engineering - IBM</div>
+            <div class="cert-card">Database Management - Udemy</div>
+        </div>
+    </section>
+    
+
+    <section id="achievements">
+        <h2 class="section-title">Achievements</h2>
+        <ul class="achievement-list">
+            <li class="achievement-item">Solved 100+ DSA problems on <a href="https://leetcode.com/" target="_blank">LeetCode</a> and <a href="https://www.hackerrank.com/" target="_blank">HackerRank</a></li>
+            <li class="achievement-item">Worked as AI-model Trainer (Prompt Engineer) @ <a href="https://outlier.ai/" target="_blank">Outlier.ai</a></li>
+            <li class="achievement-item">Contributed to open-source projects on <a href="https://github.com/nitinbhagat12" target="_blank">GitHub</a></li>
+        </ul>
+    </section>
+    
+    
+    
+
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-grid">
+            <div class="contact-card">📧 Email: <a href="mailto:bnitin10855@gmail.com">bnitin10855@gmail.com</a></div>
+            <div class="contact-card">📱 Phone: <a href="tel:+919302387323">+91-9302387323</a></div>
+            <div class="contact-card">🔗 LinkedIn: <a href="https://linkedin.com/in/nitinbhagat12" target="_blank">linkedin.com/in/nitinbhagat12</a></div>
+            <div class="contact-card">💻 GitHub: <a href="https://github.com/nitinbhagat12" target="_blank">github.com/nitinbhagat12</a></div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>© 2025 Nitin Bhagat. All rights reserved.</p>
+    </footer>
+
+    <!-- Typed.js script for type animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ["Java Developer", "DevOps Engineer", "Penetration Tester", "Problem Solver"],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    </script>
+</body>
+</html>

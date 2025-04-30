@@ -1,0 +1,286 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and font */
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: #f0f0f0;
+    background-color: #0b0c10;
+    position: relative;
+}
+
+/* Background overlay */
+.background-overlay {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #00e5ff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #00e5ff;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    text-align: left;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.profile-pic {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00e5ff;
+    box-shadow: 0 0 20px #00e5ff;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #00e5ff;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.hero-text h3 {
+    font-size: 1.8rem;
+    color: #00e5ff;
+}
+
+.hero-description {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d3d3d3;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 3rem 0 1rem;
+    color: #00e5ff;
+}
+
+/* Sections */
+section {
+    padding: 2rem 10%;
+    margin-top: 2rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+}
+
+/* Contact Section */
+#contact a {
+    color: #00e5ff;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.project-card {
+    background-color: #2a2a3a; /* Lighter background color */
+    color: #fff;
+    flex: 1 1 30%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.project-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffe5;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Common styling for all cards */
+.skills-grid, .certificates-grid, .achievement-list, .contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.skill-card, .cert-card, .achievement-item, .contact-card {
+    background-color: #2a2a3a; /* Lighter background color */
+    color: #fff;
+    padding: 16px;
+    flex: 1 1 45%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover, .cert-card:hover, .achievement-item:hover, .contact-card:hover {
+    transform: translateY(-4px);
+}
+
+a {
+    color: #00ffe5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.skills-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.skill-group {
+    flex: 1 1 40%;
+    background-color: #181827; /* Lighter shade */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.skill-group h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffe5;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.bubble {
+    display: inline-block;
+    background: #252542;
+    color: #fff;
+    padding: 10px 16px;
+    margin: 6px 6px 0 0;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.bubble:hover {
+    background: #00ffe5;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Achievements Section */
+.achievement-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    line-height: 1.8;
+}
+
+.achievement-item {
+    background-color: transparent;
+    color: #f0f0f0;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+    transition: transform 0.3s ease;
+}
+
+.achievement-item:last-child {
+    border-bottom: none;
+}
+
+.achievement-item:hover {
+    transform: translateX(5px);
+    color: #00e5ff;
+}
+
+.achievement-item a {
+    color: #00e5ff;
+    text-decoration: none;
+}
+
+.achievement-item a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 2rem;
+}
